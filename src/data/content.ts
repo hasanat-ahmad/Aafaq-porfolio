@@ -15,6 +15,11 @@ export const CONTACT = {
   location: 'Islamabad, Pakistan',
 }
 
+export const LINKS = {
+  cv: '/cv.pdf',
+  linkedin: 'https://www.linkedin.com/in/sahibzada-aafaq-ahmad-aca-528a40213/',
+}
+
 export const EXPERIENCE = [
   {
     role: 'Supervisor – Audit',

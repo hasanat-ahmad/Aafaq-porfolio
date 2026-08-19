@@ -1,7 +1,8 @@
 import { AnimatePresence, motion } from 'framer-motion'
-import { Menu, X } from 'lucide-react'
+import { Download, Menu, X } from 'lucide-react'
 import { useEffect, useState } from 'react'
-import { NAV_LINKS } from '../data/content'
+import { LINKS, NAV_LINKS } from '../data/content'
+import LinkedInIcon from './LinkedInIcon'
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -53,16 +54,48 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <button
-          type="button"
-          onClick={() => setOpen((v) => !v)}
-          aria-expanded={open}
-          aria-controls="mobile-menu"
-          aria-label={open ? 'Close menu' : 'Open menu'}
-          className="flex h-10 w-10 items-center justify-center rounded-md border border-line text-navy-900 lg:hidden"
-        >
-          {open ? <X size={18} strokeWidth={1.5} /> : <Menu size={18} strokeWidth={1.5} />}
-        </button>
+        <div className="flex items-center gap-3">
+          <a
+            href={LINKS.cv}
+            download
+            className="group hidden items-center gap-2 border border-navy-900 bg-navy-900 px-5 py-2.5 text-[11px] font-semibold tracking-[0.18em] text-white uppercase transition-all duration-300 hover:bg-navy-800 hover:shadow-[0_10px_24px_-10px_rgba(13,27,51,0.5)] lg:inline-flex"
+          >
+            <Download
+              size={14}
+              strokeWidth={1.75}
+              className="transition-transform duration-300 group-hover:translate-y-0.5"
+            />
+            CV
+          </a>
+          <a
+            href={LINKS.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn profile"
+            className="hidden h-9.5 w-9.5 items-center justify-center border border-navy-200 text-navy-800 transition-all duration-300 hover:border-gold-500 hover:bg-gold-100/50 hover:text-gold-700 lg:flex"
+          >
+            <LinkedInIcon size={16} />
+          </a>
+
+          <a
+            href={LINKS.cv}
+            download
+            aria-label="Download CV"
+            className="flex h-10 w-10 items-center justify-center border border-navy-200 text-navy-800 transition-colors duration-300 hover:border-gold-500 hover:bg-gold-100/50 lg:hidden"
+          >
+            <Download size={16} strokeWidth={1.75} />
+          </a>
+          <button
+            type="button"
+            onClick={() => setOpen((v) => !v)}
+            aria-expanded={open}
+            aria-controls="mobile-menu"
+            aria-label={open ? 'Close menu' : 'Open menu'}
+            className="flex h-10 w-10 items-center justify-center rounded-md border border-line text-navy-900 lg:hidden"
+          >
+            {open ? <X size={18} strokeWidth={1.5} /> : <Menu size={18} strokeWidth={1.5} />}
+          </button>
+        </div>
       </nav>
 
       <AnimatePresence>
@@ -87,6 +120,27 @@ export default function Navbar() {
                   </a>
                 </li>
               ))}
+              <li className="grid grid-cols-2 gap-3 pt-5">
+                <a
+                  href={LINKS.cv}
+                  download
+                  onClick={() => setOpen(false)}
+                  className="inline-flex items-center justify-center gap-2 bg-navy-900 px-4 py-3.5 text-[11px] font-semibold tracking-[0.16em] text-white uppercase transition-colors hover:bg-navy-800"
+                >
+                  <Download size={14} strokeWidth={1.75} />
+                  Download CV
+                </a>
+                <a
+                  href={LINKS.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setOpen(false)}
+                  className="inline-flex items-center justify-center gap-2 border border-navy-200 px-4 py-3.5 text-[11px] font-semibold tracking-[0.16em] text-navy-800 uppercase transition-colors hover:border-gold-500 hover:bg-gold-100/50"
+                >
+                  <LinkedInIcon size={14} />
+                  LinkedIn
+                </a>
+              </li>
             </ul>
           </motion.div>
         )}

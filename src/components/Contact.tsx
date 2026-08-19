@@ -1,6 +1,6 @@
 import { CheckCircle2, Mail, MapPin, Phone } from 'lucide-react'
 import { useState, type FormEvent } from 'react'
-import { CONTACT } from '../data/content'
+import { CONTACT, LINKS } from '../data/content'
 import LinkedInIcon from './LinkedInIcon'
 import Reveal from './Reveal'
 import SectionHeading from './SectionHeading'
@@ -91,7 +91,7 @@ export default function Contact() {
               </div>
 
               <a
-                href="https://www.linkedin.com/"
+                href={LINKS.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex items-center gap-5 border border-line bg-white p-6 transition-all duration-300 hover:border-gold-500/60"
