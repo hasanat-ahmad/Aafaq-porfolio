@@ -19,12 +19,12 @@ export default function Experience() {
           description="A career built within KPMG — progressing from audit associate to supervisory roles across three countries."
         />
 
-        <ol className="relative mt-16 ml-1 border-l border-gold-500/40 pl-8 sm:ml-4 sm:pl-12">
+        <ol className="relative mt-16 border-l border-gold-500/40 pl-8 sm:pl-12">
           {EXPERIENCE.map((item, i) => (
             <li key={item.role} className="relative pb-14 last:pb-0">
               <span
                 aria-hidden="true"
-                className="absolute top-1.5 -left-[41px] flex h-3.5 w-3.5 items-center justify-center sm:-left-[57px]"
+                className="absolute top-1.5 -left-[39px] flex h-3.5 w-3.5 items-center justify-center sm:-left-[55px]"
               >
                 <span className="absolute h-3.5 w-3.5 rounded-full border border-gold-500 bg-white" />
                 <span className="h-1.5 w-1.5 rounded-full bg-navy-900" />
