@@ -33,10 +33,10 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col items-start justify-between gap-4 border-t border-white/10 pt-8 sm:flex-row sm:items-center">
-          <p className="text-[12px] text-navy-400">
+          <p className="text-[12px] text-navy-300">
             © {year} Sahibzada Aafaq Ahmad, ACA. All rights reserved.
           </p>
-          <p className="text-[11px] tracking-[0.18em] text-navy-500 uppercase">
+          <p className="text-[11px] tracking-[0.18em] text-navy-400 uppercase">
             Precision · Integrity · Assurance
           </p>
         </div>

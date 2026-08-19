@@ -54,14 +54,14 @@ export default function Expertise() {
                       strokeWidth={1.25}
                       className="text-gold-500 transition-transform duration-300 group-hover:-translate-y-0.5"
                     />
-                    <span className="text-[11px] font-medium tracking-widest text-navy-500">
+                    <span className="text-[11px] font-medium tracking-widest text-navy-400">
                       {String(i + 1).padStart(2, '0')}
                     </span>
                   </div>
                   <h3 className="font-serif text-lg leading-snug font-medium text-white">
                     {item.title}
                   </h3>
-                  <p className="text-[13px] leading-relaxed text-navy-300">
+                  <p className="text-[13px] leading-relaxed text-navy-200">
                     {item.description}
                   </p>
                 </article>

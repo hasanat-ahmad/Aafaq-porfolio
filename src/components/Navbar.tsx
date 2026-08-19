@@ -24,10 +24,8 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? 'border-b border-line bg-white/95 shadow-[0_1px_20px_rgba(13,27,51,0.06)] backdrop-blur-sm'
-          : 'bg-transparent'
+      className={`fixed inset-x-0 top-0 z-50 border-b border-line bg-white/95 backdrop-blur-sm transition-shadow duration-300 ${
+        scrolled ? 'shadow-[0_1px_20px_rgba(13,27,51,0.08)]' : ''
       }`}
     >
       <nav

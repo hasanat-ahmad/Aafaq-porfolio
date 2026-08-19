@@ -102,7 +102,7 @@ export default function Hero() {
 
           <motion.p
             {...fadeUp(0.5)}
-            className="mt-10 flex items-center gap-2 text-[12px] tracking-wide text-navy-300"
+            className="mt-10 flex items-center gap-2 text-[12px] tracking-wide text-navy-200"
           >
             <MapPin size={13} strokeWidth={1.5} className="text-gold-400" />
             {CONTACT.location}
@@ -125,13 +125,13 @@ export default function Hero() {
               </div>
               <div className="text-center">
                 <p className="font-serif text-xl text-white">Aafaq Ahmad</p>
-                <p className="mt-1 text-[11px] tracking-[0.24em] text-navy-300 uppercase">
+                <p className="mt-1 text-[11px] tracking-[0.24em] text-navy-200 uppercase">
                   Audit &amp; Assurance
                 </p>
               </div>
             </div>
             <div className="border-t border-white/10 px-5 py-3.5">
-              <div className="flex items-center justify-between text-[10px] tracking-[0.2em] text-navy-300 uppercase">
+              <div className="flex items-center justify-between text-[10px] tracking-[0.2em] text-navy-200 uppercase">
                 <span>Islamabad</span>
                 <span className="text-gold-400">Since 2021</span>
               </div>
