@@ -24,7 +24,7 @@ export default function Experience() {
             <li key={item.role} className="relative pb-14 last:pb-0">
               <span
                 aria-hidden="true"
-                className="absolute top-1.5 -left-[39px] flex h-3.5 w-3.5 items-center justify-center sm:-left-[55px]"
+                className="absolute top-1.5 -left-9.75 flex h-3.5 w-3.5 items-center justify-center sm:-left-[55px]"
               >
                 <span className="absolute h-3.5 w-3.5 rounded-full border border-gold-500 bg-white" />
                 <span className="h-1.5 w-1.5 rounded-full bg-navy-900" />
