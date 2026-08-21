@@ -35,6 +35,7 @@ export default function Expertise() {
         <SectionHeading
           eyebrow="03 — Expertise"
           title="Core Expertise"
+          tone="dark"
           description="A focused professional practice built on audit precision, reporting integrity, and assurance quality."
         />
 
